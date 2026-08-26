@@ -79,6 +79,7 @@ git clone <URL> && cd cps-bonseon && git config user.name "본인이름"
 ---
 
 ## 4. 파일 안내
+- `PLAYBOOK.md` — **사람 3명 작업 분업(단계별 타임라인·전사·감독 루프)** ← 현장 운영 핵심
 - `CLAUDE.md` — 코워크 에이전트 공통 지침(폴더 열면 자동)
 - `LANES.md` — **5개 레인 정의 + 레인별 시작 프롬프트**(세션마다 복사)
 - `PROMPT.md` — 웹/폴더 없이 쓸 때 붙일 마스터 프롬프트
