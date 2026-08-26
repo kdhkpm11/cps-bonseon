@@ -3,7 +3,7 @@
 담당 축: **비교하고 고른다.** 레드팀 포함.
 
 ## 소유 파일 (이것만 편집)
-- `sections/02_대안비교.md` · `sections/04_선택_로드맵.md`
+- `sections/02_compare.md` · `sections/04_choice_roadmap.md`
 
 ## 할 일
 - 대안 비교표(장점/한계/적합 상황)

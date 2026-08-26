@@ -3,7 +3,7 @@
 담당 축: **문제의 뿌리와 사람들 사이의 충돌.**
 
 ## 소유 파일 (이것만 편집)
-- `sections/01_원인.md` · `sections/05_갈등_효과.md`
+- `sections/01_cause.md` · `sections/05_conflict_effect.md`
 
 ## 할 일
 - 구조적 원인 3~4개(개조식)

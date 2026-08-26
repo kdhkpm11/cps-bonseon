@@ -9,14 +9,14 @@
 ## 레인 표 (소유 파일은 서로 배타적)
 | 레인 | 이름 | 소유 파일 (이것만 편집) | 언제 켜나 |
 |---|---|---|---|
-| **L1** | 총괄/취합 | `SPINE.md`, `FINAL.md`, `BOARD.md`, `00_문제.md` | **항상** |
-| **L2** | 원인·갈등 | `sections/01_원인.md`, `sections/05_갈등_효과.md` | 원인분석·이해관계 과제 있을 때(대개 켬) |
-| **L3** | 대안·선택 | `sections/02_대안비교.md`, `sections/04_선택_로드맵.md` | 전략/방식 비교·선택 과제 있을 때(대개 켬) |
-| **L4** | 모델·시나리오 | `sections/03_가정_시나리오.md` | 시뮬레이션·수치·시나리오 과제 있을 때 |
+| **L1** | 총괄/취합 | `SPINE.md`, `FINAL.md`, `BOARD.md`, `00_problem.md` | **항상** |
+| **L2** | 원인·갈등 | `sections/01_cause.md`, `sections/05_conflict_effect.md` | 원인분석·이해관계 과제 있을 때(대개 켬) |
+| **L3** | 대안·선택 | `sections/02_compare.md`, `sections/04_choice_roadmap.md` | 전략/방식 비교·선택 과제 있을 때(대개 켬) |
+| **L4** | 모델·시나리오 | `sections/03_scenario.md` | 시뮬레이션·수치·시나리오 과제 있을 때 |
 | **L5** | 시각자료 | `visuals/*` | 시각자료 비중 있을 때(대개 켬) |
 
 ## 활성화 절차 (Phase 0에서 L1이 결정)
-1. L1이 `00_문제.md`의 수행 과제를 보고 켤 레인을 고른다.
+1. L1이 `00_problem.md`의 수행 과제를 보고 켤 레인을 고른다.
 2. 활성 레인 목록을 `SPINE.md` 맨 위 "활성 레인:" 줄에 적는다. (예: `활성 레인: L1 L2 L3 L5`)
 3. 켠 레인만 세션을 연다. 안 켠 레인의 파일은 비워둔 채 둔다.
 
@@ -32,27 +32,27 @@
 
 **L1**
 ```
-너는 이 리포의 레인 L1(총괄/취합)이다. CLAUDE.md, lanes/L1_총괄.md, 00_문제.md를 읽어라.
+너는 이 리포의 레인 L1(총괄/취합)이다. CLAUDE.md, lanes/L1_orchestrator.md, 00_problem.md를 읽어라.
 먼저 수행 과제를 보고 켤 레인을 정해 SPINE.md에 "활성 레인:"과 핵심 전략·가정을 확정하라.
-너는 SPINE.md, FINAL.md, BOARD.md, 00_문제.md만 편집한다. 다른 파일은 읽기만. 시작.
+너는 SPINE.md, FINAL.md, BOARD.md, 00_problem.md만 편집한다. 다른 파일은 읽기만. 시작.
 ```
 **L2**
 ```
-너는 이 리포의 레인 L2(원인·갈등)다. CLAUDE.md, lanes/L2_원인갈등.md, SPINE.md, 00_문제.md를 읽어라.
-SPINE 기준으로 sections/01_원인.md, sections/05_갈등_효과.md만 편집한다. 다른 파일은 읽기만. 시작.
+너는 이 리포의 레인 L2(원인·갈등)다. CLAUDE.md, lanes/L2_cause_conflict.md, SPINE.md, 00_problem.md를 읽어라.
+SPINE 기준으로 sections/01_cause.md, sections/05_conflict_effect.md만 편집한다. 다른 파일은 읽기만. 시작.
 ```
 **L3**
 ```
-너는 이 리포의 레인 L3(대안·선택)다. CLAUDE.md, lanes/L3_대안선택.md, SPINE.md, 00_문제.md를 읽어라.
-SPINE 기준으로 sections/02_대안비교.md, sections/04_선택_로드맵.md만 편집한다. 다른 파일은 읽기만. 시작.
+너는 이 리포의 레인 L3(대안·선택)다. CLAUDE.md, lanes/L3_compare_choice.md, SPINE.md, 00_problem.md를 읽어라.
+SPINE 기준으로 sections/02_compare.md, sections/04_choice_roadmap.md만 편집한다. 다른 파일은 읽기만. 시작.
 ```
 **L4**
 ```
-너는 이 리포의 레인 L4(모델·시나리오)다. CLAUDE.md, lanes/L4_모델시나리오.md, SPINE.md, 00_문제.md를 읽어라.
-SPINE 기준으로 sections/03_가정_시나리오.md만 편집한다. 다른 파일은 읽기만. 시작.
+너는 이 리포의 레인 L4(모델·시나리오)다. CLAUDE.md, lanes/L4_model_scenario.md, SPINE.md, 00_problem.md를 읽어라.
+SPINE 기준으로 sections/03_scenario.md만 편집한다. 다른 파일은 읽기만. 시작.
 ```
 **L5**
 ```
-너는 이 리포의 레인 L5(시각자료)다. CLAUDE.md, lanes/L5_시각.md, SPINE.md, 그리고 각 섹션 파일을 읽어라.
+너는 이 리포의 레인 L5(시각자료)다. CLAUDE.md, lanes/L5_visual.md, SPINE.md, 그리고 각 섹션 파일을 읽어라.
 SPINE·섹션 내용 기준으로 visuals/ 안에서만 파일을 만들어 편집한다. 다른 파일은 읽기만. 시작.
 ```

@@ -1,0 +1,5 @@
+# 줄바꿈 정규화 (맥+윈도우 혼합 필수) — 저장소는 항상 LF
+* text=auto eol=lf
+*.sh   text eol=lf
+*.md   text eol=lf
+*.ps1  text eol=crlf
