@@ -12,7 +12,8 @@ while true; do
   # 1) 내 변경 먼저 저장
   if [[ -n "$(git status --porcelain)" ]]; then
     git add -A
-    git commit -q -m "auto($WHO): $(date +%H:%M:%S)" 2>/dev/null
+    FILES="$(git diff --cached --name-only | sed 's#.*/##' | tr '\n' ' ')"
+    git commit -q -m "auto($WHO) $(date +%H:%M:%S): $FILES" 2>/dev/null
   fi
   # 2) 남들 것 당겨오기 (충돌 나면 멈추지 말고 알림)
   if ! git pull --rebase -q 2>/dev/null; then
