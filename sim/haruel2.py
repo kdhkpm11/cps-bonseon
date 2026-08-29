@@ -194,7 +194,7 @@ def cohort_minwon():
         Student("아민", [0.55,0.58,0.60,0.62], 0.35, 0.9,
                 voice=Voice(context="한국어 문장이 어려움"), note="언어장벽(학생 선언)"),
         Student("소연", [0.70,0.71,0.70,0.72], 0.18, 0.85, self_report="crisis", note="정서위기"),
-        Student("찬이", [0.74,0.75,0.76,0.77], 0.14, 0.9, note="협업(부정 오판)"),
+        Student("찬이", [0.74,0.75,0.76,0.77], 0.14, 0.9, collab_flag=True, note="협업(부정 오판)"),
         Student("유나", [0.86,0.87,0.88,0.88], 0.10, 1.0, picks_hard_ratio=0.15, picks_hard_trend=-0.05,
                 voice=Voice(goal="challenge"), note="회피→학생은 도전 원함"),
     ]
