@@ -47,6 +47,7 @@ class Student:
     hint_rate: float = 0.0      # 보조
     picks_hard_ratio: Optional[float] = None
     picks_hard_trend: float = 0.0
+    collab_flag: bool = False    # 협업형 과제(답안 유사=부정 아님)
     # 배제 신호(직접판단 X, 기록만): access_min, camera_off — 환경 프록시
     voice: Voice = field(default_factory=Voice)
     note: str = ""
