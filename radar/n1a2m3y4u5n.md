@@ -1,4 +1,2 @@
-작업중: -
-무엇: 미션2 하루쌤2.0 설계 완료(sections/M2_design.md) → 다음 미션3 적용 가능
-상태: 완료
-갱신: 15:01
+작업중: sim/haruel2.py
+무엇: 하루쌤2.0 실제 구현(규칙엔진+추세+selective prediction 20
