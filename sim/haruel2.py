@@ -109,7 +109,10 @@ def reconcile(s: Student, h: Dict):
     if v.context:
         trail.append(f"학생 맥락선언: “{v.context}”")
         if any(k in v.context for k in ["PC", "기기", "폰", "집", "환경", "가정"]):
-            trail.append("→ 접속·카메라·풀이시간을 판단서 배제(환경 프록시)")
+            trail.append("→ 접속·카메라·풀이시간 배제(환경 프록시)")
+            if s.acc_hist[-1] >= 0.6 and s.retry_rate <= 0.3:
+                return ("자동추천", "표준 학습(환경 지표 미반영)", h["why"],
+                        trail + ["→ 핵심신호(정답률·오답반복) 양호 → 환경 배제하고 자동"])
         if any(k in v.context for k in ["한국어", "언어", "문장"]):
             return ("자동추천", "언어 지원(읽기보조)+계산·문장형 분리 측정",
                     h["why"], trail + ["→ 저정답률=언어장벽, 능력 단정 안 함(학생 선언 근거)"])
