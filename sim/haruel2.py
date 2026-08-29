@@ -70,6 +70,11 @@ def ai_hypothesis(s: Student) -> Dict:
                     why=f"정답률 {acc:.0%}+피로 → 과부하", conf="mid",
                     q="요즘 학습량이 부담되나요? (예=감축 / 아니오=현행 유지)")
 
+    # 협업형 과제(답안 유사=부정 아님): 자동 무혐의(반복 시에만 사람). 맥락 맹목 이상탐지 방지
+    if s.collab_flag:
+        return dict(kind="자동추천", rec="부정행위 자동판정 안 함(협업 인정)",
+                    why="답안 유사=협업 결과 가능(맥락)", conf="high", q="")
+
     # 회피(고정답률·쉬운 것만): 탐색과제(자동), 학생 의사 확인
     if s.picks_hard_ratio is not None and s.picks_hard_ratio < 0.3 and s.picks_hard_trend < 0:
         return dict(kind="자동추천", rec="난이도 상향 '탐색 과제' 소량",
