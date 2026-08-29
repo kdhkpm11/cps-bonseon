@@ -1,4 +1,4 @@
 작업중: -
-무엇: 제출용 통합 프롬프트 정리(sections/SUBMIT_PROMPT.md) + AI보조모듈 ai_coach.py
+무엇: SUBMIT_PROMPT에 부록 A~F 확장(레포구조·실증·개발프롬프트·제품AI·200만검증)
 상태: 완료
-갱신: 16:40
+갱신: 16:58
