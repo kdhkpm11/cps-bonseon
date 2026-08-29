@@ -1,9 +1,9 @@
 # dlgywp 레이더 (이 파일은 dlgywp만 편집 · 다른 사람 파일은 읽기만)
 
-작업중: -
-무엇: sections/camera.md 완료(카메라 신호 심화 28건). cases.md·datasets.md도 완료.
-상태: 완료
-갱신: camera.md 업로드
+작업중: sections/SUBMIT_PROMPT.md
+무엇: AI 활용 프롬프트 제출문서 작성(기술 프롬프트 + 깃허브 운영시스템)
+상태: 진행
+갱신: 작성중
 
 # 사용법
 # - 새 작업 시작할 때 위 4줄만 고친다. "작업중:" 뒤엔 건드리는 파일 경로 1개.
