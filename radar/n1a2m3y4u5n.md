@@ -1,4 +1,4 @@
-작업중: sim/haruel2_bigdata.py
-무엇: v3 빅데이터 종합 - 백분위보정+conformal 20%+kNN또래매칭+앙상블+협의
+작업중: sections/M2_traceability.md
+무엇: 설계조건 7개→코드 반영위치 정밀 추적표(조건해체·매칭)
 상태: 진행
-갱신: 15:18
+갱신: 15:21
